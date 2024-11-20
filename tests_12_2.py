@@ -18,7 +18,7 @@ class TournamentTest(unittest.TestCase):
         self.assertTrue(self.all_results[1][2], 'Ник')
 
     def test2(self):
-        dist = runner.Tournament(90,  self.runner2, self.runner3)
+        dist = runner.Tournament(90, self.runner2, self.runner3)
         self.all_results.update({2: dist.start()})
         self.assertTrue(self.all_results[2][2], 'Ник')
 
@@ -33,6 +33,6 @@ class TournamentTest(unittest.TestCase):
         print(cls.all_results[2])
         print(cls.all_results[3])
 
-
+   
 if __name__ == '__main__':
     unittest.main()
